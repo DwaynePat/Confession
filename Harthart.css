@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    align-items: center;
+}
+button{
+    font-size:300px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+button:hover{
+    text-shadow: =4px 0 red, 0 4px red, 4px 0 red,0 -4px red;
+}
+button:hover p{
+    display: flex;
+    font-size: 30px;width: 275px;
+    height: 50px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white,0 -1px white;
+    position: absolute;
+    top: 45%;
+    left: 15%
+}
+p{
+    display: none;
+}
+.heart{
+    position: fixed;
+    top: 1vh;
+    font-size:40px;
+    animation: heartrain 3s linear forwards;
+}
+@keyframes heartrain {
+    to{
+        transform: translateY(105vh);
+    }
+}
